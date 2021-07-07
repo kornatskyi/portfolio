@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { AppBar, Container, IconButton, makeStyles, Toolbar, Typography, useScrollTrigger } from '@material-ui/core';
 import { ThemeContext } from '../src/theme';
 import Landing from '../src/Landing';
+import Skills from '../src/Skills';
 import { name, projects } from '../data.json';
 
 const useStyles = makeStyles(theme => ({
@@ -65,6 +66,7 @@ export default function Index({ projects }) {
       <Toolbar className={classes.toolbar} />
       <Container>
         <Landing />
+        <Skills/>
       </Container>
     </div>
   );

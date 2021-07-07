@@ -45,7 +45,6 @@ const useStyles = makeStyles(theme => ({
     ...iobj
 }))
 
-console.log(professionalDetails);
 
 export default function Landing() {
 

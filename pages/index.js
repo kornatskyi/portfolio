@@ -3,6 +3,7 @@ import { AppBar, Container, IconButton, makeStyles, Toolbar, Typography, useScro
 import { ThemeContext } from '../src/theme';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
+import Projects from '../src/Projects';
 import { name, projects } from '../data.json';
 
 const useStyles = makeStyles(theme => ({
@@ -13,13 +14,15 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "none",
   }
 }))
+console.log("🚀 ~ process.env", process.env)
 
 export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
+  
   const reqInit = {
     headers: { 
-      'Authorization': `token ${process.env.PAT}`
+      'Authorization': `token ${process.env.GITHUB_TOKEN}`
     }
   }
   const fullRepoData = await Promise.allSettled(
@@ -45,6 +48,7 @@ export async function getStaticProps() {
 
 export default function Index({ projects }) {
 
+
   const classes = useStyles()
 
   const { theme, toggleTheme } = useContext(ThemeContext)
@@ -67,6 +71,7 @@ export default function Index({ projects }) {
       <Container>
         <Landing />
         <Skills/>
+        <Projects  data={projects}/>
       </Container>
     </div>
   );

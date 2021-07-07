@@ -103,7 +103,7 @@
     },
     "about": {
         "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
-        "picture": "https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg",
+        "picture": "/photo.jpg",
         "social": [
             {
                 "alt": "kaustubh._.o",

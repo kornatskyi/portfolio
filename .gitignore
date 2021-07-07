@@ -18,3 +18,9 @@ yarn-error.log*
 /.next
 
 .vercel
+
+
+# env variables
+/envvars.js
+
+/next.config.js

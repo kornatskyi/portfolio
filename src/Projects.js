@@ -1,4 +1,5 @@
-import { Card, CardActionArea, CardActions, CardContent, CardHeader, Chip, Fade, Grid, Hidden, makeStyles, Typography } from "@material-ui/core";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardHeader, Chip, Fade, Grid, Hidden, makeStyles, Typography } from "@material-ui/core";
+import { Link } from "@material-ui/icons";
 import { RepoForkedIcon, RepoIcon, StarIcon } from '@primer/octicons-react';
 import Image from 'next/image'
 import { useEffect, useRef, useState } from "react";
@@ -8,11 +9,22 @@ const useStyles = makeStyles(theme => ({
         minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
     },
     card: {
-        height: '100%'
+        height: '100%',
+
     },
     cardActionArea: {
+        display: 'flex',
+        textAlign: 'inherit',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        alignItems: 'flex-start',
         height: '100%',
         // display: 'grid'
+    },
+    homepage: {
+        display:'flex',
+        justifyContent:'space-between',
+        width:'100%'
     }
 }))
 
@@ -31,6 +43,9 @@ export default function Projects({ data }) {
         observer.observe(animRef.current)
         return () => observer.unobserve(animRef.current)
     }, [])
+
+    console.log("🚀 ~ data.homepage", data[0].value.homepage)
+
 
     return (
         <Grid direction="row-reverse" container justify="center" alignItems="center" spacing={10} className={classes.cont}>
@@ -64,6 +79,7 @@ export default function Projects({ data }) {
                                         rel="noopener noreferrer"
                                     >
                                         <CardHeader
+
                                             title={<><RepoIcon verticalAlign='middle' /> {v.value.name}</>}
                                             subheader={
                                                 <>
@@ -104,6 +120,14 @@ export default function Projects({ data }) {
                                                     )
                                                 }
                                             </Grid>
+                                        </CardActions>
+                                        <CardActions className={classes.homepage} >
+                                            <Button href="https://kornatskyi.github.io/artway/" color="primary">
+                                                Demo
+                                            </Button>
+                                            <Button href="https://kornatskyi.github.io/artway/" color="primary">
+                                                GitHub
+                                            </Button>
                                         </CardActions>
                                     </CardActionArea>
                                 </Card>

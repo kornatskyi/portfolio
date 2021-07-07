@@ -4,7 +4,9 @@ import { ThemeContext } from '../src/theme';
 import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Projects from '../src/Projects';
+import About from '../src/About';
 import { name, projects } from '../data.json';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -14,17 +16,20 @@ const useStyles = makeStyles(theme => ({
     boxShadow: "none",
   }
 }))
-console.log("🚀 ~ process.env", process.env)
 
+
+
+// This function gets called at build time
 export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
-  
+
   const reqInit = {
-    headers: { 
+    headers: {
       'Authorization': `token ${process.env.GITHUB_TOKEN}`
     }
   }
+  // Call an external API endpoint to get projects
   const fullRepoData = await Promise.allSettled(
     repos.map(
       async name => {
@@ -38,16 +43,22 @@ export async function getStaticProps() {
     )
   );
 
+  // By returning { props: { projects } }, the Projects component
+  // will receive `projects` as a prop at build time
   return {
     props: {
       projects: fullRepoData
     },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 60 seconds
     revalidate: 60
   }
 }
 
 export default function Index({ projects }) {
 
+  
 
   const classes = useStyles()
 
@@ -60,7 +71,7 @@ export default function Index({ projects }) {
       <AppBar color={!trigger ? "transparent" : "inherit"} className={classes.appBar} position="fixed">
         <Toolbar>
           <Typography variant="h6" className={classes.root}>
-            { name }
+            {name}
           </Typography>
           <IconButton edge="end" color="inherit" onClick={toggleTheme}>
             {theme.palette.type === "dark" ? "☀️" : "🌑"}
@@ -70,8 +81,9 @@ export default function Index({ projects }) {
       <Toolbar className={classes.toolbar} />
       <Container>
         <Landing />
-        <Skills/>
-        <Projects  data={projects}/>
+        <Skills />
+        <Projects data={projects} />
+        <About/>
       </Container>
     </div>
   );

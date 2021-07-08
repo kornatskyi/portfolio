@@ -5,6 +5,7 @@ import Landing from '../src/Landing';
 import Skills from '../src/Skills';
 import Projects from '../src/Projects';
 import About from '../src/About';
+import Experience from '../src/Experience';
 import { name, projects } from '../data.json';
 
 
@@ -84,6 +85,7 @@ export default function Index({ projects }) {
         <Skills />
         <Projects data={projects} />
         <About/>
+
       </Container>
     </div>
   );

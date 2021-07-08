@@ -57,7 +57,31 @@
         ]
     },
     "experience": {
-        "Work Experience": [
+        "Education": [
+            {
+                "organization": "Pervomaisk college of Admiral Makarov National University of Shipbuilding ",
+                "role": "Internal combustion engines",
+                "type": "Student",
+                "startDate": "2012-09-01",
+                "endDate": "2016-07-01",
+                "city": "Pervomaisk",                
+                "country": "Ukraine",
+                "url": "http://www.ppi.net.ua/",
+                "thumbnail": "/nuk.jpeg"
+            },
+            {
+                "organization": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\"",
+                "role": "Mathematical methods of computer modeling",
+                "type": "Student",
+                "startDate": "2016-08-01",
+                "endDate": "2017-7-01",
+                "city": "Kyiv",
+                "country": "Ukraine",
+                "url": "https://www.linkedin.com/company/pictoreal/",
+                "thumbnail": "/kisspng-igor-sikorsky-kyiv-polytechnic-institute-duhok-pol-5b1f41d1924fc6.8965930915287751215993.jpg"
+            }
+        ],
+        "Certification": [
             {
                 "organization": "CloudDFN LLP",
                 "role": "Full Stack Developer",
@@ -70,32 +94,6 @@
                 "url": "https://www.linkedin.com/company/clouddfn-llp/",
                 "thumbnail": "/CDFN.jfif"
             }
-        ],
-        "Volunteer Experience": [
-            {
-                "organization": "PICT IEEE Student Branch (PISB)",
-                "role": "Technical Head",
-                "type": "Member",
-                "startDate": "2019-07-01",
-                "endDate": "",
-                "city": "Pune",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/pisbieee/",
-                "thumbnail": "/PISB.jfif"
-            },
-            {
-                "organization": "Pictoreal",
-                "role": "Technical Head",
-                "type": "Member",
-                "startDate": "2019-07-01",
-                "endDate": "2021-04-01",
-                "city": "Pune",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/pictoreal/",
-                "thumbnail": "/Picto.jfif"
-            }
         ]
     },
     "about": {
@@ -103,19 +101,24 @@
         "picture": "/photo.jpg",
         "social": [
             {
-                "alt": "kaustubh._.o",
-                "icon": "instagram",
-                "link": "https://www.instagram.com/kaustubh._.o/"
+                "alt": "bohdankorn",
+                "icon": "facebook",
+                "link": "https://www.facebook.com/bohdankorn"
             },
             {
-                "alt": "KO_272",
+                "alt": "kornatskyi",
                 "icon": "twitter",
-                "link": "https://twitter.com/KO_272"
+                "link": "https://twitter.com/kornatskyi"
             },
             {
-                "alt": "kaustubh#4489",
+                "alt": "Bohdan.Korn#1174",
                 "icon": "discord",
-                "link": "https://discord.com/"
+                "link": "https://discord.com/users/861821387308138537"
+            },
+            {
+                "alt": "@Kornatskyi",
+                "icon": "telegram",
+                "link": "https://t.me/Kornatskyi"
             }
         ]
     },

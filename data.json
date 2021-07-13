@@ -3,11 +3,11 @@
     "landing": {
         "title": "Hi, I'm Bohdan",
         "subtitles": [
-            "Full-stack developer 🌐",
-            "Cross-platform developer 📱💻",
-            "Exploring cloud ☁️",
-            "Beginner in devops ♾️",
-            "Just getting started 📈"
+            "Self taught developer 🌐",
+            "Becoming full stack dev",
+            "Exploring cloud ☁️"
+            
+          
         ],
         "professionalDetails": [
             {
@@ -97,7 +97,7 @@
         ]
     },
     "about": {
-        "description": "I am a full-stack cross-platform app developer, pursuing my B.E in Computer Engineering from Pune Institute of Computer Technology. I strive to make meaningful applications with the best UI practices.",
+        "description": "Who am I?",
         "picture": "/photo.jpg",
         "social": [
             {

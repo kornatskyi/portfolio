@@ -30,6 +30,9 @@ export async function getStaticProps() {
       'Authorization': `token ${process.env.GITHUB_TOKEN}`
     }
   }
+
+
+
   // Call an external API endpoint to get projects
   const fullRepoData = await Promise.allSettled(
     repos.map(
@@ -59,7 +62,7 @@ export async function getStaticProps() {
 
 export default function Index({ projects }) {
 
-  
+
 
   const classes = useStyles()
 
@@ -84,7 +87,7 @@ export default function Index({ projects }) {
         <Landing />
         <Skills />
         <Projects data={projects} />
-        <About/>
+        <About />
 
       </Container>
     </div>

@@ -9,6 +9,6 @@ module.exports = withPWA({
         domains: ['cdn.pixabay.com']
     },
     env: {
-        GITHUB_TOKEN: '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'
+        GITHUB_TOKEN: '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'
     }
 })

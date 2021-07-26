@@ -8,7 +8,8 @@ module.exports = withPWA({
     images: {
         domains: ['cdn.pixabay.com']
     },
+    //token will not working if i commit it to GitHub
     env: {
-        GITHUB_TOKEN: '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'
+        GITHUB_TOKEN: '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'
     }
 })

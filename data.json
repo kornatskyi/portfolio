@@ -4,10 +4,10 @@
         "title": "Hi, I'm Bohdan",
         "subtitles": [
             "Self taught developer 🌐",
-            "Becoming full stack dev",
-            "Exploring cloud ☁️"
-            
-          
+            "Becoming full stack dev 🧑‍💻",
+            "Interested in electronics 🤖",
+            "Passion about technologies 🖥️"
+
         ],
         "professionalDetails": [
             {
@@ -29,14 +29,26 @@
     },
     "skills": {
         "Languages known": [
-            "JavaScript", "Java", "HTML5", "CSS3"
+            "JavaScript",
+            "Java",
+            "HTML5",
+            "CSS3"
         ],
         "Frontend": [
-            "React", "Redux", "Next.js", "Material-UI", "Bootstrap"
+            "React",
+            "Redux",
+            "Next.js",
+            "Material-UI",
+            "Bootstrap"
         ],
         "Backend, Database and Cloud": [
-            "Node.js", "Express", "MongoDB", "MySQL",
-            "Heroku", "Firebase", "AWS Amplify"
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "MySQL",
+            "Heroku",
+            "Firebase",
+            "AWS Amplify"
         ],
         "Mobile": [
             {
@@ -44,7 +56,8 @@
                 "icon": "react",
                 "backgroundColor": "#424242"
             },
-            "Expo", "Android"
+            "Expo",
+            "Android"
         ]
     },
     "projects": {
@@ -54,7 +67,6 @@
             "react-native-blog-app",
             "nucampsite-react",
             "mathwars-front"
-
         ]
     },
     "experience": {
@@ -65,7 +77,7 @@
                 "type": "Associate degree",
                 "startDate": "2012-09-01",
                 "endDate": "2016-07-01",
-                "city": "Pervomaisk",                
+                "city": "Pervomaisk",
                 "country": "Ukraine",
                 "url": "http://www.ppi.net.ua/",
                 "thumbnail": "/nuk.jpeg"
@@ -107,7 +119,6 @@
                 "country": "USA",
                 "url": "https://www.linkedin.com/school/nucamp/",
                 "thumbnail": "/nucamp.jpeg"
-
             },
             {
                 "organization": "freeCodeCamp",
@@ -121,12 +132,11 @@
                 "url": "https://www.freecodecamp.org/learn/",
                 "thumbnail": "/freecodecamp.jpg",
                 "certificate": "https://www.freecodecamp.org/certification/kornatskyi/javascript-algorithms-and-data-structures"
-
             }
         ]
     },
     "about": {
-        "description": "I'm am a self taught web developer!",
+        "description": "I am a Web Developer who truly believes that we live in the greatest time of human civilization. In the past couple of decades, information technologies have delivered automation on a whole new level. Nowadays people have much more free time to spend on their own lives, art, studying, and creativity. I want to be part of people who make these things possible for all of us.",
         "picture": "/photo.jpg",
         "social": [
             {

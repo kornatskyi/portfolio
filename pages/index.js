@@ -87,6 +87,7 @@ export default function Index({ projects }) {
         <Landing />
         <Skills />
         <Projects data={projects} />
+        <Experience/>
         <About />
 
       </Container>

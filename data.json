@@ -62,7 +62,7 @@
             {
                 "organization": "Pervomaisk college of Admiral Makarov National University of Shipbuilding ",
                 "role": "Internal combustion engines",
-                "type": "Student",
+                "type": "Associate degree",
                 "startDate": "2012-09-01",
                 "endDate": "2016-07-01",
                 "city": "Pervomaisk",                
@@ -73,27 +73,51 @@
             {
                 "organization": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\"",
                 "role": "Mathematical methods of computer modeling",
-                "type": "Student",
+                "type": "Bachelor(unfinished)",
                 "startDate": "2016-08-01",
                 "endDate": "2017-7-01",
                 "city": "Kyiv",
                 "country": "Ukraine",
-                "url": "https://www.linkedin.com/company/pictoreal/",
+                "url": "https://kpi.ua/en",
                 "thumbnail": "/kisspng-igor-sikorsky-kyiv-polytechnic-institute-duhok-pol-5b1f41d1924fc6.8965930915287751215993.jpg"
             }
         ],
         "Certification": [
             {
-                "organization": "CloudDFN LLP",
-                "role": "Full Stack Developer",
-                "type": "Internship",
-                "startDate": "2020-07-20",
-                "endDate": "2021-01-20",
-                "city": "Mumbai",
-                "state": "Maharashtra",
-                "country": "India",
-                "url": "https://www.linkedin.com/company/clouddfn-llp/",
-                "thumbnail": "/CDFN.jfif"
+                "organization": "Nucamp",
+                "role": "Front End Web + Mobile Developer",
+                "type": "Certificate",
+                "startDate": "2021-03-15",
+                "endDate": "2021-07-20",
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://www.linkedin.com/school/nucamp/",
+                "thumbnail": "/nucamp.png"
+            },
+            {
+                "organization": "Nucamp",
+                "role": "Full Stack Web Developer",
+                "type": "In progress",
+                "startDate": "2021-07-25",
+                "endDate": "2021-08-25",
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://www.linkedin.com/school/nucamp/",
+                "thumbnail": "/nucamp.png"
+            },
+            {
+                "organization": "freeCodeCamp",
+                "role": "JavaScript Algorithms and Data Structures",
+                "type": "Certificate",
+                "startDate": "2021-02-10",
+                "endDate": "2021-04-29",
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://www.freecodecamp.org/learn/",
+                "thumbnail": "/freecodecamp.svg"
             }
         ]
     },

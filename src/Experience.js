@@ -78,18 +78,7 @@ export default function Experience() {
                 <Typography variant="h2" gutterBottom align="center">
                     Experience and education
                 </Typography>
-                <Hidden mdDown>
-                    <Fade in={animate} style={{ transitionDelay: '250ms' }}>
-                        <div>
-                            <Image
-                                alt="Experience"
-                                src="/experience.svg"
-                                width="996.46"
-                                height="828.18"
-                            />
-                        </div>
-                    </Fade>
-                </Hidden>
+               
             </Grid>
             <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
                 {
@@ -98,7 +87,7 @@ export default function Experience() {
                             <Typography variant="h4" align={textAlign} gutterBottom component="p">
                                 {title}
                             </Typography>
-                            <Grid container item direction="row" spacing={1} justify="center">
+                            <Grid container item  direction="row" spacing={1} justify="center">
                                 {
                                     experience[title].map(({
                                         organization,
@@ -111,7 +100,7 @@ export default function Experience() {
                                         url,
                                         thumbnail
                                     }, i) =>
-                                        <Grid item xs={12} sm key={i}>
+                                        <Grid item xs={12} sm={6} key={i}>
                                             <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
                                                 <Card className={classes.card}>
                                                     <CardActionArea

@@ -92,7 +92,6 @@ export default function Landing() {
                                     </Zoom>
 
                                     <div onClick={(e) => {
-                                        console.log("hello");
                                         e.preventDefault();
 
                                         //copy text to clipboard function

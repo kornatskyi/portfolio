@@ -93,7 +93,8 @@
                 "state": "Washington",
                 "country": "USA",
                 "url": "https://www.linkedin.com/school/nucamp/",
-                "thumbnail": "/nucamp.png"
+                "thumbnail": "/nucamp.jpeg",
+                "certificate": "/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_8045.pdf"
             },
             {
                 "organization": "Nucamp",
@@ -105,7 +106,8 @@
                 "state": "Washington",
                 "country": "USA",
                 "url": "https://www.linkedin.com/school/nucamp/",
-                "thumbnail": "/nucamp.png"
+                "thumbnail": "/nucamp.jpeg"
+
             },
             {
                 "organization": "freeCodeCamp",
@@ -117,7 +119,9 @@
                 "state": "Washington",
                 "country": "USA",
                 "url": "https://www.freecodecamp.org/learn/",
-                "thumbnail": "/freecodecamp.svg"
+                "thumbnail": "/freecodecamp.jpg",
+                "certificate": "https://www.freecodecamp.org/certification/kornatskyi/javascript-algorithms-and-data-structures"
+
             }
         ]
     },

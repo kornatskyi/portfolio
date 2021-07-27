@@ -1,6 +1,6 @@
 import { Avatar, Card, CardActionArea, CardHeader, Fade, Grid, Hidden, makeStyles, Typography, useMediaQuery, useTheme } from "@material-ui/core";
 import Image from 'next/image'
-import { DateRange, LocationCity } from '@material-ui/icons';
+import { DateRange, LocationCity, Assignment } from '@material-ui/icons';
 import { experience } from '../data.json'
 import { useEffect, useRef, useState } from "react";
 
@@ -19,6 +19,11 @@ const useStyles = makeStyles(theme => ({
     },
     expObj: {
         marginBottom: theme.spacing(4)
+    },
+    certificateLink: {
+        color: 'rgba(0, 0, 0, 0.54)',
+
+
     }
 }))
 
@@ -78,7 +83,7 @@ export default function Experience() {
                 <Typography variant="h2" gutterBottom align="center">
                     Experience and education
                 </Typography>
-               
+
             </Grid>
             <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
                 {
@@ -87,7 +92,7 @@ export default function Experience() {
                             <Typography variant="h4" align={textAlign} gutterBottom component="p">
                                 {title}
                             </Typography>
-                            <Grid container item  direction="row" spacing={1} justify="center">
+                            <Grid container item direction="row" spacing={1} justify="center">
                                 {
                                     experience[title].map(({
                                         organization,
@@ -98,7 +103,8 @@ export default function Experience() {
                                         city,
                                         country,
                                         url,
-                                        thumbnail
+                                        thumbnail,
+                                        certificate
                                     }, i) =>
                                         <Grid item xs={12} sm={6} key={i}>
                                             <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
@@ -133,6 +139,53 @@ export default function Experience() {
                                                             subheader={`${city}, ${country}`}
                                                             className={classes.cardHeader}
                                                         />
+
+
+                                                        {
+                                                            (() => {
+                                                                if (title === "Certification") {
+                                                                    if (certificate) {
+
+                                                                        return (
+                                                                            <CardHeader
+                                                                                avatar={<Assignment />}
+                                                                                subheader={
+                                                                                    (
+                                                                                        <div onClick={(e) => {
+                                                                                            e.preventDefault()
+
+                                                                                            //open in new tab
+                                                                                            window.open(certificate, '_blank')
+
+                                                                                        }}
+                                                                                        >See certificate</div>
+                                                                                    )
+
+                                                                                }
+                                                                                className={classes.cardHeader}
+                                                                            />
+                                                                        )
+                                                                    } else {
+                                                                        //return no certificate
+                                                                        return (
+                                                                            <CardHeader
+                                                                                avatar={<Assignment />}
+                                                                                subheader={
+                                                                                    (
+                                                                                        <div
+                                                                                        >No certificate yet</div>
+                                                                                    )
+
+                                                                                }
+                                                                                className={classes.cardHeader}
+                                                                            />)
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            )()
+                                                        }
+
                                                     </CardActionArea>
                                                 </Card>
                                             </Fade>

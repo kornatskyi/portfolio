@@ -21,9 +21,9 @@
                 "link": "https://github.com/kornatskyi"
             },
             {
-                "alt": "Email",
+                "alt": "bohdan.kornatskyi.2@gmail.com",
                 "icon": "gmail",
-                "link": "mailto:bohdan.kornatskyi@gmail.com"
+                "link": "mailto:bohdan.kornatskyi.2@gmail.com"
             }
         ]
     },
@@ -54,6 +54,7 @@
             "react-native-blog-app",
             "nucampsite-react",
             "mathwars-front"
+
         ]
     },
     "experience": {

@@ -1,4 +1,4 @@
-import { Avatar, Fade, Grid, Hidden, makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
+import { Avatar,  Grid,  makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
 import ReactTyped from "react-typed";
 import clsx from "clsx";
 import Image from 'next/image'

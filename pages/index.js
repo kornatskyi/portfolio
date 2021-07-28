@@ -24,8 +24,7 @@ const useStyles = makeStyles(theme => ({
 export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
-//just force the build
-  console.log("🚀 ~ process.env", process.env)
+
 
   const reqInit = {
     headers: {

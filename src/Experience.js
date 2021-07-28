@@ -1,4 +1,4 @@
-import { Avatar, Card, CardActionArea, CardHeader, Fade, Grid, Hidden, makeStyles, Typography, useMediaQuery, useTheme } from "@material-ui/core";
+import { Avatar, Card, CardActionArea, CardHeader, Grid, makeStyles, Typography, useMediaQuery, useTheme } from "@material-ui/core";
 import Image from 'next/image'
 import { DateRange, LocationCity, Assignment } from '@material-ui/icons';
 import { experience } from '../data.json'
@@ -107,7 +107,6 @@ export default function Experience() {
                                         certificate
                                     }, i) =>
                                         <Grid item xs={12} sm={6} key={i}>
-                                            <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
                                                 <Card className={classes.card}>
                                                     <CardActionArea
                                                         className={classes.cardActionArea}
@@ -188,7 +187,6 @@ export default function Experience() {
 
                                                     </CardActionArea>
                                                 </Card>
-                                            </Fade>
                                         </Grid>
                                     )
                                 }

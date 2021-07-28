@@ -122,6 +122,19 @@
             },
             {
                 "organization": "freeCodeCamp",
+                "role": "Responsive Web Design",
+                "type": "Certificate",
+                "startDate": "2021-01-20",
+                "endDate": "2021-03-26",
+                "city": "Seattle",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://www.freecodecamp.org/learn/",
+                "thumbnail": "/freecodecamp.jpg",
+                "certificate": "https://www.freecodecamp.org/certification/kornatskyi/responsive-web-design"
+            },
+            {
+                "organization": "freeCodeCamp",
                 "role": "JavaScript Algorithms and Data Structures",
                 "type": "Certificate",
                 "startDate": "2021-02-10",

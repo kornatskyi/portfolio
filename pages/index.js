@@ -25,11 +25,15 @@ export async function getStaticProps() {
   const baseURI = projects.baseURI
   const repos = projects.repositories
 
+  console.log("🚀 ~ process.env", process.env)
+  
   const reqInit = {
     headers: {
       'Authorization': `token ${process.env.GITHUB_TOKEN}`
     }
   }
+
+
 
 
 
@@ -87,7 +91,7 @@ export default function Index({ projects }) {
         <Landing />
         <Skills />
         <Projects data={projects} />
-        <Experience/>
+        <Experience />
         <About />
 
       </Container>

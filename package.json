@@ -9,7 +9,7 @@
     "clsx": "latest",
     "imagemin": "^8.0.0",
     "imagemin-cli": "^6.0.0",
-    "next": "latest",
+    "next": "^11.0.1",
     "next-pwa": "^5.0.5",
     "prop-types": "latest",
     "react": "latest",

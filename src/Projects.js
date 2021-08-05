@@ -63,7 +63,7 @@ export default function Projects({ data }) {
     <Grid
       direction="row-reverse"
       container
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={10}
       className={classes.cont}

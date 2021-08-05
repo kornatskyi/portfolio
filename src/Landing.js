@@ -1,4 +1,5 @@
 import { Avatar,  Grid,  makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
+import { useState } from "react";
 import ReactTyped from "react-typed";
 import clsx from "clsx";
 import Image from 'next/image'
@@ -63,8 +64,10 @@ export default function Landing() {
     const theme = useTheme();
     const mdDown = useMediaQuery(theme.breakpoints.down('sm'));
 
+    const [isCopied, setIsCopied] = useState(false)
+
     return (
-        <Grid container justify="center" alignItems="center" className={classes.cont}>
+        <Grid container justifyContent="center" alignItems="center" className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant={mdDown ? "h2" : "h1"}>
                     {landing.title}
@@ -78,6 +81,8 @@ export default function Landing() {
                         loop
                     />
                 </Typography>
+
+               
                 <Grid container direction="row" spacing={2}>
                     {
                         professionalDetails.map(({ alt, icon, link }, i) =>
@@ -120,9 +125,13 @@ export default function Landing() {
                                             }
                                         }
                                         copyToClipboard(alt)
+                                        setIsCopied(true)
+                                        setTimeout(() => {
+                                            setIsCopied(false)
+                                        }, 5000)
                                     }}>
                                         <Zoom in={true}>
-                                            <Tooltip title={"copy"} placement="bottom">
+                                            <Tooltip title={isCopied ? "copied" : "copy"} placement="bottom">
                                                 <Avatar variant="rounded" className={clsx([classes.copyIcon, classes[alt]])}>
                                                     <CopyIcon />
                                                 </Avatar>

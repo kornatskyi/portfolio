@@ -51,7 +51,7 @@ export default function About() {
     const classes = useStyles()
 
     return (
-        <Grid direction="row" container justify="center" alignItems="center" className={classes.cont}>
+        <Grid direction="row" container justifyContent="center" alignItems="center" className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant="h2" gutterBottom component="p">
                     About me
@@ -60,13 +60,13 @@ export default function About() {
                     {about.description}
                 </Typography>
             </Grid>
-            <Grid container direction="column" item xs={12} lg={6} spacing={2} justify="center" alignItems="center">
+            <Grid container direction="column" item xs={12} lg={6} spacing={2} justifyContent="center" alignItems="center">
                 <Grid item xs={12}>
                     <Avatar variant="rounded" src={about.picture} className={classes.dp}>
 
                     </Avatar>
                 </Grid>
-                <Grid container item xs={12} spacing={2} justify="center">
+                <Grid container item xs={12} spacing={2} justifyContent="center">
                     {
                         socialDetails.map(({ alt, icon, link }, i) =>
                             <Grid item key={i}>

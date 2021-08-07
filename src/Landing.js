@@ -67,7 +67,7 @@ export default function Landing() {
     const [isCopied, setIsCopied] = useState(false)
 
     return (
-        <Grid container justifyContent="center" alignItems="center" className={classes.cont}>
+        <Grid container justify="center" alignItems="center" className={classes.cont}>
             <Grid item xs={12} lg={6}>
                 <Typography variant={mdDown ? "h2" : "h1"}>
                     {landing.title}

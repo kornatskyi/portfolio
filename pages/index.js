@@ -11,7 +11,10 @@ import { name, projects } from '../data.json';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    height: "100%",
+    width: "100%",
+    overflow: "auto",
   },
   appBar: {
     boxShadow: "none",

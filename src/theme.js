@@ -1,8 +1,8 @@
-import { createTheme } from "@material-ui/core";
+import { createMuiTheme } from "@material-ui/core";
 import { createContext, useState } from "react";
 import { theme } from "../data.json";
 
-const lightTheme = createTheme(
+const lightTheme = createMuiTheme(
   (theme && theme.light && Object.keys(theme.light).length > 0) ? theme.light :
   {
     palette: {
@@ -11,7 +11,7 @@ const lightTheme = createTheme(
   }
 )
 
-const darkTheme = createTheme(
+const darkTheme = createMuiTheme(
   (theme && theme.dark && Object.keys(theme.dark).length > 0) ? theme.dark :
   {
     palette: {
@@ -36,7 +36,7 @@ const ThemeContext = createContext()
 
 const ThemeProvider = ({ children }) => {
     
-    // const [theme, setTheme] = useState(createTheme({
+    // const [theme, setTheme] = useState(createMuiTheme({
     //   palette: {
     //     type: (typeof window !== "undefined" && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light'
     //   }
@@ -47,7 +47,7 @@ const ThemeProvider = ({ children }) => {
 
     const toggleTheme = () => {
         // setTheme(
-        //   createTheme({
+        //   createMuiTheme({
         //     palette: {
         //       type: theme.palette.type === 'dark' ? 'light' : 'dark'
         //     }

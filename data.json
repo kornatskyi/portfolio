@@ -119,7 +119,8 @@
                 "state": "Washington",
                 "country": "USA",
                 "url": "https://www.linkedin.com/school/nucamp/",
-                "thumbnail": "/nucamp.jpeg"
+                "thumbnail": "/nucamp.jpeg",
+                "certificate": "Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_8503.pdf"
             },
             {
                 "organization": "freeCodeCamp",

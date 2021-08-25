@@ -64,7 +64,6 @@
         "baseURI": "https://api.github.com/repos/kornatskyi/",
         "repositories": [
             "artway",
-            "react-native-blog-app",
             "nucampsite-react",
             "mathwars-front",
             "isaac-portfolio"

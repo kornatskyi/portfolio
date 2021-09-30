@@ -7,7 +7,6 @@
             "Becoming full stack dev 🧑‍💻",
             "Interested in electronics 🤖",
             "Passion about technologies 🖥️"
-
         ],
         "professionalDetails": [
             {
@@ -147,6 +146,34 @@
                 "url": "https://www.freecodecamp.org/learn/",
                 "thumbnail": "/freecodecamp.jpg",
                 "certificate": "https://www.freecodecamp.org/certification/kornatskyi/javascript-algorithms-and-data-structures"
+            }
+        ],
+        "Awards": [
+            {
+                "organization": "Mintbean",
+                "role": "Hakhathon",
+                "type": "Mintbean Star Award - Top 5% of devs",
+                "startDate": "2021-08-24",
+                "endDate": "2021-09-01",
+                "city": "Online",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://mintbean.io/meets?sort=upcoming",
+                "thumbnail": "/mintbean.png",
+                "certificate": "https://hire.mintbean.io/"
+            },
+            {
+                "organization": "Mintbean",
+                "role": "Hakhathon",
+                "type": "Certificate of Completion - Top 16% of devs",
+                "startDate": "2021-08-24",
+                "endDate": "2021-09-01",
+                "city": "Online",
+                "state": "Washington",
+                "country": "USA",
+                "url": "https://mintbean.io/meets?sort=upcoming",
+                "thumbnail": "/mintbean.png",
+                "certificate": "https://hire.mintbean.io/"
             }
         ]
     },

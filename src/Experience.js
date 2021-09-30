@@ -85,10 +85,10 @@ export default function Experience() {
                 </Typography>
 
             </Grid>
-            <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
+            <Grid container item xs={12} lg={6} direction="column" spacing={1} >
                 {
                     Object.getOwnPropertyNames(experience).map((title, id) =>
-                        <Grid item key={id} className={classes.expObj}>
+                        <Grid style={{ width: "100%", marginLeft: "auto" }} item key={id} className={classes.expObj}  >
                             <Typography variant="h4" align={textAlign} gutterBottom component="p">
                                 {title}
                             </Typography>
@@ -106,87 +106,92 @@ export default function Experience() {
                                         thumbnail,
                                         certificate
                                     }, i) =>
-                                        <Grid item xs={12} sm={6} key={i}>
-                                                <Card className={classes.card}>
-                                                    <CardActionArea
-                                                        className={classes.cardActionArea}
-                                                        href={url}
-                                                        target="_blank"
-                                                        rel="noopener noreferrer"
-                                                    >
-                                                        <CardHeader
-                                                            avatar={
-                                                                <Avatar variant="rounded">
-                                                                    <Image
-                                                                        alt={`${organization} logo`}
-                                                                        src={thumbnail}
-                                                                        layout="fill"
-                                                                    />
-                                                                </Avatar>
-                                                            }
-                                                            title={organization}
-                                                            subheader={role + " - " + type}
-                                                        />
-                                                        <CardHeader
-                                                            avatar={<DateRange />}
-                                                            title={getHumanDiff(startDate, endDate)}
-                                                            subheader={`${startDate} - ${endDate}`}
-                                                            className={classes.cardHeader}
-                                                        />
-                                                        <CardHeader
-                                                            avatar={<LocationCity />}
-                                                            subheader={`${city}, ${country}`}
-                                                            className={classes.cardHeader}
-                                                        />
+                                        <Grid style={{ marginLeft: "auto" }} item xs={12} sm={6} key={i}>
+                                            <Card className={classes.card}>
+                                                <CardActionArea
+                                                    className={classes.cardActionArea}
+                                                    // href={url}
+                                                    // target="_blank"
+                                                    rel="noopener noreferrer"
+                                                >
+                                                    <CardHeader
+                                                        avatar={
+                                                            <Avatar variant="rounded">
+                                                                <Image
+                                                                    alt={`${organization} logo`}
+                                                                    src={thumbnail}
+                                                                    layout="fill"
+                                                                />
+                                                            </Avatar>
+                                                        }
+                                                        title={organization}
+                                                        subheader={role + " - " + type}
+                                                        onClick={(e) => {
+                                                            e.preventDefault()
+                                                            window.open(url, "_blank")
+
+                                                        }}
+                                                    />
+                                                    <CardHeader
+                                                        avatar={<DateRange />}
+                                                        title={getHumanDiff(startDate, endDate)}
+                                                        subheader={`${startDate} - ${endDate}`}
+                                                        className={classes.cardHeader}
+                                                    />
+                                                    <CardHeader
+                                                        avatar={<LocationCity />}
+                                                        subheader={`${city}, ${country}`}
+                                                        className={classes.cardHeader}
+                                                    />
 
 
-                                                        {
-                                                            (() => {
-                                                                if (title === "Certification") {
-                                                                    if (certificate) {
+                                                    {
+                                                        (() => {
+                                                            if (title === "Certification" || title === "Awards") {
+                                                                if (certificate) {
 
-                                                                        return (
-                                                                            <CardHeader
-                                                                                avatar={<Assignment />}
-                                                                                subheader={
-                                                                                    (
-                                                                                        <div onClick={(e) => {
-                                                                                            e.preventDefault()
+                                                                    return (
+                                                                        <CardHeader
+                                                                            avatar={<Assignment />}
+                                                                            subheader={
+                                                                                (
+                                                                                    <div onClick={(e) => {
+                                                                                        e.preventDefault()
 
-                                                                                            //open in new tab
-                                                                                            window.open(certificate, '_blank')
+                                                                                        //open in new tab
+                                                                                        window.open(certificate, '_blank')
 
-                                                                                        }}
-                                                                                        >See certificate</div>
-                                                                                    )
+                                                                                    }}
+                                                                                    >See certificate</div>
+                                                                                )
 
-                                                                                }
-                                                                                className={classes.cardHeader}
-                                                                            />
-                                                                        )
-                                                                    } else {
-                                                                        //return no certificate
-                                                                        return (
-                                                                            <CardHeader
-                                                                                avatar={<Assignment />}
-                                                                                subheader={
-                                                                                    (
-                                                                                        <div
-                                                                                        >No certificate yet</div>
-                                                                                    )
+                                                                            }
+                                                                            className={classes.cardHeader}
+                                                                        />
+                                                                    )
+                                                                } else {
+                                                                    //return no certificate
+                                                                    return (
+                                                                        <CardHeader
+                                                                            avatar={<Assignment />}
+                                                                            subheader={
+                                                                                (
+                                                                                    <div
+                                                                                    >No certificate yet</div>
+                                                                                )
 
-                                                                                }
-                                                                                className={classes.cardHeader}
-                                                                            />)
-                                                                    }
+                                                                            }
+                                                                            className={classes.cardHeader}
+                                                                        />)
                                                                 }
                                                             }
-
-                                                            )()
                                                         }
 
-                                                    </CardActionArea>
-                                                </Card>
+                                                        )()
+                                                    }
+
+                                                </CardActionArea>
+                                            </Card>
                                         </Grid>
                                     )
                                 }

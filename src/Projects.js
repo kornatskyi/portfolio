@@ -19,7 +19,6 @@ import {
   LinkIcon,
   MarkGithubIcon,
 } from "@primer/octicons-react";
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const useStyles = makeStyles((theme) => ({

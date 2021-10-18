@@ -74,7 +74,10 @@ export default function Index({ projects }) {
 
   const { theme, toggleTheme } = useContext(ThemeContext)
 
-  const trigger = useScrollTrigger({ disableHysteresis: true })
+  const trigger = useScrollTrigger({
+    disableHysteresis: true, threshold: 0,
+
+  })
 
   return (
     <div className={classes.root}>

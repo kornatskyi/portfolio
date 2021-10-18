@@ -1,7 +1,9 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheets } from '@material-ui/core/styles';
-import { name } from '../data.json'
+import data from '../data.json'
+
+const { name } = data;
 
 export default class MyDocument extends Document {
   render() {
@@ -11,15 +13,15 @@ export default class MyDocument extends Document {
           <meta charSet='utf-8' />
           {/* PWA primary color */}
           <meta name="theme-color" content="black" />
-          <meta name="description" content={`Portfolio of ${name}`}/>
+          <meta name="description" content={`Portfolio of ${name}`} />
           <meta name='keywords' content={'Portfolio ' + name + ' skills projects experience resume'} />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
-          <link rel="apple-touch-icon" sizes="180x180" href="/logo.png"/>
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+          <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
           <link rel="manifest" href="/manifest.webmanifest"></link>
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S0X8Y5X3J"></script>
           <script

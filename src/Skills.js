@@ -1,11 +1,14 @@
-import { Avatar, Grid,  makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
+import { Avatar, Grid, makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
 import Cancel from "@material-ui/icons/Cancel";
 import clsx from "clsx";
 import Image from 'next/image'
 import { useEffect, useRef, useState } from "react";
 import simpleIcons from 'simple-icons'
-import { skills } from '../data.json'
+import data from '../data.json'
 import { iconify } from "./util";
+
+
+const { skills } = data;
 
 const wrapper = (sk = []) => sk.map(v => {
     const ic = simpleIcons.get(typeof v === "string" ? iconify(v) : iconify(v.icon)) || {
@@ -76,7 +79,7 @@ export default function Skills() {
                 <Typography variant="h2" gutterBottom align="center">
                     Skills
                 </Typography>
-     
+
             </Grid>
             <Grid container item xs={12} lg={6} direction="column" spacing={1} alignItems={align}>
                 {

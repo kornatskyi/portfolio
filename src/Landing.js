@@ -1,15 +1,18 @@
-import { Avatar,  Grid,  makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
+import { Avatar, Grid, makeStyles, Tooltip, Typography, useMediaQuery, useTheme, Zoom } from "@material-ui/core";
 import { useState } from "react";
 import ReactTyped from "react-typed";
 import clsx from "clsx";
 import Image from 'next/image'
 import simpleIcons from 'simple-icons'
-import { landing } from '../data.json'
+
+import data from '../data.json'
 import { iconify } from "./util";
 import Cancel from "@material-ui/icons/Cancel";
 import {
     CopyIcon
 } from "@primer/octicons-react"
+
+const { landing } = data;
 
 const professionalDetails = landing.professionalDetails.map(({ alt, icon, link }) => {
     const ic = simpleIcons.get(iconify(icon)) || {
@@ -69,6 +72,7 @@ export default function Landing() {
     return (
         <Grid container justify="center" alignItems="center" className={classes.cont}>
             <Grid item xs={12} lg={6}>
+
                 <Typography variant={mdDown ? "h2" : "h1"}>
                     {landing.title}
                 </Typography>
@@ -82,7 +86,7 @@ export default function Landing() {
                     />
                 </Typography>
 
-               
+
                 <Grid container direction="row" spacing={2}>
                     {
                         professionalDetails.map(({ alt, icon, link }, i) =>

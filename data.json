@@ -2,6 +2,7 @@
     "name": "Bohdan Kornatskyi",
     "landing": {
         "title": "Hi, I'm Bohdan",
+        "photo": "/landing-img.JPG",
         "subtitles": [
             "Self taught developer 🌐",
             "Becoming full stack dev 🧑‍💻",

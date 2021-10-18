@@ -6,13 +6,15 @@ import Skills from '../src/Skills';
 import Projects from '../src/Projects';
 import About from '../src/About';
 import Experience from '../src/Experience';
-import { name, projects } from '../data.json';
+import data from '../data.json';
+
+const { name, projects } = data;
 
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-   
+
   },
   appBar: {
     boxShadow: "none",

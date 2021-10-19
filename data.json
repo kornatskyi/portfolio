@@ -34,25 +34,52 @@
     ]
   },
   "skills": {
-    "Languages known": ["JavaScript", "Java", "HTML5", "CSS3"],
-    "Frontend": ["React", "Redux", "Next.js", "Material-UI", "Bootstrap"],
-    "Backend, Database and Cloud": [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "MySQL",
-      "Heroku",
-      "Firebase",
-      "AWS Amplify"
-    ],
-    "Mobile": [
+    "Frontend": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Redux",
+      "Next.js",
+      "HTML5",
+      "CSS3",
+      "Material-UI",
+      "Bootstrap",
+      "SASS",
+      "styled-components",
       {
         "alt": "React_Native",
         "icon": "react",
         "backgroundColor": "#424242"
       },
-      "Expo",
-      "Android"
+      "Expo"
+    ],
+    "Backend, Database and Cloud": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "Java",
+      "Docker",
+      "Heroku",
+      "Firebase",
+      "AWS Amplify",
+      "Microsoft Azure",
+      "Netlify"
+    ],
+    "Testing and tools": [
+      "Jest",
+      "Git",
+      "Linux",
+      "Figma",
+      "GNU Bash",
+      "Webpack",
+      "npm",
+      "Postman",
+      "gimp",
+      "Babel",
+      "Wireshark",
+      "Android Studio",
+      "IntelliJ IDEA"
     ]
   },
   "projects": {

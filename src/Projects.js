@@ -67,16 +67,15 @@ export default function Projects({ data }) {
       spacing={10}
       className={classes.cont}
     >
-      <Grid item xs={12} lg={6}>
+      <Grid item>
         <Typography variant="h2" gutterBottom align="center" innerRef={animRef}>
           Projects
         </Typography>
-
       </Grid>
-      <Grid container item xs={12} lg={6} direction="row" spacing={1}>
+      <Grid container item direction="row" spacing={1}>
         {!!data &&
           data.map((v, i) => (
-            <Grid item sm={6} xs={12} key={i}>
+            <Grid item md={4} sm={6} xs={12} key={i}>
               <Fade in={animate} style={{ transitionDelay: `${200 * i}ms` }}>
                 <Card key={i} className={classes.cardActionArea}>
                   <CardHeader

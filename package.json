@@ -16,6 +16,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.3.1",
+    "react-material-ui-carousel": "^2.3.5",
     "react-typed": "^1.2.0",
     "simple-icons": "^4.11.0",
     "webpack": "^5.58.2"

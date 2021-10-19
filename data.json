@@ -85,12 +85,15 @@
   "projects": {
     "baseURI": "https://api.github.com/repos/kornatskyi/",
     "repositories": [
-      "artway",
+      "authentication",
+      "authentication-form",
+      "zombie-time",
+      "isaac-portfolio",
       "nucampsite-react",
       "mathwars-front",
-      "isaac-portfolio",
-      "zombie-time",
-      "authentication-form"
+      "artway",
+      "tictactoe-on-sockets",
+      "CoffeeQuiz"
     ]
   },
   "experience": {

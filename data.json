@@ -1,228 +1,218 @@
 {
-    "name": "Bohdan Kornatskyi",
-    "landing": {
-        "title": "Hi, I'm Bohdan",
-        "photo": "/landing-img.JPG",
-        "subtitles": [
-            "Self taught developer 🌐",
-            "Becoming full stack dev 🧑‍💻",
-            "Interested in electronics 🤖",
-            "Passion about technologies 🖥️"
-        ],
-        "professionalDetails": [
-            {
-                "alt": "bohdan-kornatskyi",
-                "icon": "linkedin",
-                "link": "https://www.linkedin.com/in/bohdan-kornatskyi/"
-            },
-            {
-                "alt": "kornatskyi",
-                "icon": "github",
-                "link": "https://github.com/kornatskyi"
-            },
-            {
-                "alt": "bohdan.kornatskyi.2@gmail.com",
-                "icon": "gmail",
-                "link": "mailto:bohdan.kornatskyi.2@gmail.com"
-            }
-        ]
-    },
-    "skills": {
-        "Languages known": [
-            "JavaScript",
-            "Java",
-            "HTML5",
-            "CSS3"
-        ],
-        "Frontend": [
-            "React",
-            "Redux",
-            "Next.js",
-            "Material-UI",
-            "Bootstrap"
-        ],
-        "Backend, Database and Cloud": [
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "MySQL",
-            "Heroku",
-            "Firebase",
-            "AWS Amplify"
-        ],
-        "Mobile": [
-            {
-                "alt": "React_Native",
-                "icon": "react",
-                "backgroundColor": "#424242"
-            },
-            "Expo",
-            "Android"
-        ]
-    },
-    "projects": {
-        "baseURI": "https://api.github.com/repos/kornatskyi/",
-        "repositories": [
-            "artway",
-            "nucampsite-react",
-            "mathwars-front",
-            "isaac-portfolio",
-            "zombie-time",
-            "authentication-form"
-        ]
-    },
-    "experience": {
-        "Education": [
-            {
-                "organization": "Pervomaisk college of Admiral Makarov National University of Shipbuilding ",
-                "role": "Internal combustion engines",
-                "type": "Associate degree",
-                "startDate": "2012-09-01",
-                "endDate": "2016-07-01",
-                "city": "Pervomaisk",
-                "country": "Ukraine",
-                "url": "http://www.ppi.net.ua/",
-                "thumbnail": "/nuk.jpeg"
-            },
-            {
-                "organization": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\"",
-                "role": "Mathematical methods of computer modeling",
-                "type": "Bachelor(unfinished)",
-                "startDate": "2016-08-01",
-                "endDate": "2017-7-01",
-                "city": "Kyiv",
-                "country": "Ukraine",
-                "url": "https://kpi.ua/en",
-                "thumbnail": "/kisspng-igor-sikorsky-kyiv-polytechnic-institute-duhok-pol-5b1f41d1924fc6.8965930915287751215993.jpg"
-            }
-        ],
-        "Certification": [
-            {
-                "organization": "Nucamp",
-                "role": "Front End Web + Mobile Developer",
-                "type": "Certificate",
-                "startDate": "2021-03-15",
-                "endDate": "2021-07-20",
-                "city": "Seattle",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://www.linkedin.com/school/nucamp/",
-                "thumbnail": "/nucamp.jpeg",
-                "certificate": "/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_8045.pdf"
-            },
-            {
-                "organization": "Nucamp",
-                "role": "Full Stack Web Developer",
-                "type": "In progress",
-                "startDate": "2021-07-25",
-                "endDate": "2021-08-25",
-                "city": "Seattle",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://www.linkedin.com/school/nucamp/",
-                "thumbnail": "/nucamp.jpeg",
-                "certificate": "Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_8503.pdf"
-            },
-            {
-                "organization": "freeCodeCamp",
-                "role": "Responsive Web Design",
-                "type": "Certificate",
-                "startDate": "2021-01-20",
-                "endDate": "2021-03-26",
-                "city": "Seattle",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://www.freecodecamp.org/learn/",
-                "thumbnail": "/freecodecamp.jpg",
-                "certificate": "https://www.freecodecamp.org/certification/kornatskyi/responsive-web-design"
-            },
-            {
-                "organization": "freeCodeCamp",
-                "role": "JavaScript Algorithms and Data Structures",
-                "type": "Certificate",
-                "startDate": "2021-02-10",
-                "endDate": "2021-04-29",
-                "city": "Seattle",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://www.freecodecamp.org/learn/",
-                "thumbnail": "/freecodecamp.jpg",
-                "certificate": "https://www.freecodecamp.org/certification/kornatskyi/javascript-algorithms-and-data-structures"
-            }
-        ],
-        "Awards": [
-            {
-                "organization": "Mintbean",
-                "role": "Hakhathon",
-                "type": "Mintbean Star Award - Top 5% of devs",
-                "startDate": "2021-08-24",
-                "endDate": "2021-09-01",
-                "city": "Online",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://mintbean.io/meets?sort=upcoming",
-                "thumbnail": "/mintbean.png",
-                "certificate": "https://hire.mintbean.io/"
-            },
-            {
-                "organization": "Mintbean",
-                "role": "Hakhathon",
-                "type": "Certificate of Completion - Top 16% of devs",
-                "startDate": "2021-08-24",
-                "endDate": "2021-09-01",
-                "city": "Online",
-                "state": "Washington",
-                "country": "USA",
-                "url": "https://mintbean.io/meets?sort=upcoming",
-                "thumbnail": "/mintbean.png",
-                "certificate": "https://hire.mintbean.io/"
-            }
-        ]
-    },
-    "about": {
-        "description": "I am a Web Developer who truly believes that we live in the greatest time of human civilization. In the past couple of decades, information technologies have delivered automation on a whole new level. Nowadays people have much more free time to spend on their own lives, art, studying, and creativity. I want to be part of people who make these things possible for all of us.",
-        "picture": "/photo.jpg",
-        "social": [
-            {
-                "alt": "bohdankorn",
-                "icon": "facebook",
-                "link": "https://www.facebook.com/bohdankorn"
-            },
-            {
-                "alt": "kornatskyi",
-                "icon": "twitter",
-                "link": "https://twitter.com/kornatskyi"
-            },
-            {
-                "alt": "Bohdan.Korn#1174",
-                "icon": "discord",
-                "link": "https://discord.com/users/861821387308138537"
-            },
-            {
-                "alt": "@Kornatskyi",
-                "icon": "telegram",
-                "link": "https://t.me/Kornatskyi"
-            }
-        ]
-    },
-    "theme": {
-        "light": {
-            "palette": {
-                "type": "light",
-                "background": {
-                    "paper": "#fff",
-                    "default": "#fafafa"
-                }
-            }
-        },
-        "dark": {
-            "palette": {
-                "type": "dark",
-                "background": {
-                    "paper": "#303030",
-                    "default": "#212121"
-                }
-            }
+  "name": "Bohdan Kornatskyi",
+  "landing": {
+    "title": "Hi, I'm Bohdan",
+    "photo": "/landing-img.JPG",
+    "location": "Seattle, WA",
+    "subtitles": [
+      "Self taught developer 🌐",
+      "Becoming full stack dev 🧑‍💻",
+      "Interested in electronics 🤖",
+      "Passion about technologies 🖥️"
+    ],
+    "professionalDetails": [
+      {
+        "alt": "linkedin.com/in/bohdan-kornatskyi/",
+        "icon": "linkedin",
+        "link": "https://www.linkedin.com/in/bohdan-kornatskyi/"
+      },
+      {
+        "alt": "github.com/kornatskyi",
+        "icon": "github",
+        "link": "https://github.com/kornatskyi"
+      },
+      {
+        "alt": "bohdan.kornatskyi.2@gmail.com",
+        "icon": "gmail",
+        "link": "mailto:bohdan.kornatskyi.2@gmail.com"
+      }
+    ]
+  },
+  "skills": {
+    "Languages known": ["JavaScript", "Java", "HTML5", "CSS3"],
+    "Frontend": ["React", "Redux", "Next.js", "Material-UI", "Bootstrap"],
+    "Backend, Database and Cloud": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "Heroku",
+      "Firebase",
+      "AWS Amplify"
+    ],
+    "Mobile": [
+      {
+        "alt": "React_Native",
+        "icon": "react",
+        "backgroundColor": "#424242"
+      },
+      "Expo",
+      "Android"
+    ]
+  },
+  "projects": {
+    "baseURI": "https://api.github.com/repos/kornatskyi/",
+    "repositories": [
+      "artway",
+      "nucampsite-react",
+      "mathwars-front",
+      "isaac-portfolio",
+      "zombie-time",
+      "authentication-form"
+    ]
+  },
+  "experience": {
+    "Education": [
+      {
+        "organization": "Pervomaisk college of Admiral Makarov National University of Shipbuilding ",
+        "role": "Internal combustion engines",
+        "type": "Associate degree",
+        "startDate": "2012-09-01",
+        "endDate": "2016-07-01",
+        "city": "Pervomaisk",
+        "country": "Ukraine",
+        "url": "http://www.ppi.net.ua/",
+        "thumbnail": "/nuk.jpeg"
+      },
+      {
+        "organization": "National Technical University of Ukraine \"Kyiv Polytechnic Institute\"",
+        "role": "Mathematical methods of computer modeling",
+        "type": "Bachelor(unfinished)",
+        "startDate": "2016-08-01",
+        "endDate": "2017-7-01",
+        "city": "Kyiv",
+        "country": "Ukraine",
+        "url": "https://kpi.ua/en",
+        "thumbnail": "/kisspng-igor-sikorsky-kyiv-polytechnic-institute-duhok-pol-5b1f41d1924fc6.8965930915287751215993.jpg"
+      }
+    ],
+    "Certification": [
+      {
+        "organization": "Nucamp",
+        "role": "Front End Web + Mobile Developer",
+        "type": "Certificate",
+        "startDate": "2021-03-15",
+        "endDate": "2021-07-20",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://www.linkedin.com/school/nucamp/",
+        "thumbnail": "/nucamp.jpeg",
+        "certificate": "/Front_End_Web_UI_Frameworks_and_Tools_Bootstrap_4-Front_End_Web_and_Mobile_Development_Certificate_8045.pdf"
+      },
+      {
+        "organization": "Nucamp",
+        "role": "Full Stack Web Developer",
+        "type": "In progress",
+        "startDate": "2021-07-25",
+        "endDate": "2021-08-25",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://www.linkedin.com/school/nucamp/",
+        "thumbnail": "/nucamp.jpeg",
+        "certificate": "Backend_with_NodeJS-Full_Stack_Web_and_Mobile_Development_Certificate_8503.pdf"
+      },
+      {
+        "organization": "freeCodeCamp",
+        "role": "Responsive Web Design",
+        "type": "Certificate",
+        "startDate": "2021-01-20",
+        "endDate": "2021-03-26",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://www.freecodecamp.org/learn/",
+        "thumbnail": "/freecodecamp.jpg",
+        "certificate": "https://www.freecodecamp.org/certification/kornatskyi/responsive-web-design"
+      },
+      {
+        "organization": "freeCodeCamp",
+        "role": "JavaScript Algorithms and Data Structures",
+        "type": "Certificate",
+        "startDate": "2021-02-10",
+        "endDate": "2021-04-29",
+        "city": "Seattle",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://www.freecodecamp.org/learn/",
+        "thumbnail": "/freecodecamp.jpg",
+        "certificate": "https://www.freecodecamp.org/certification/kornatskyi/javascript-algorithms-and-data-structures"
+      }
+    ],
+    "Awards": [
+      {
+        "organization": "Mintbean",
+        "role": "Hakhathon",
+        "type": "Mintbean Star Award - Top 5% of devs",
+        "startDate": "2021-08-24",
+        "endDate": "2021-09-01",
+        "city": "Online",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://mintbean.io/meets?sort=upcoming",
+        "thumbnail": "/mintbean.png",
+        "certificate": "https://hire.mintbean.io/"
+      },
+      {
+        "organization": "Mintbean",
+        "role": "Hakhathon",
+        "type": "Certificate of Completion - Top 16% of devs",
+        "startDate": "2021-08-24",
+        "endDate": "2021-09-01",
+        "city": "Online",
+        "state": "Washington",
+        "country": "USA",
+        "url": "https://mintbean.io/meets?sort=upcoming",
+        "thumbnail": "/mintbean.png",
+        "certificate": "https://hire.mintbean.io/"
+      }
+    ]
+  },
+  "about": {
+    "description": "I am a Web Developer who truly believes that we live in the greatest time of human civilization. In the past couple of decades, information technologies have delivered automation on a whole new level. Nowadays people have much more free time to spend on their own lives, art, studying, and creativity. I want to be part of people who make these things possible for all of us.",
+    "picture": "/photo.jpg",
+    "social": [
+      {
+        "alt": "bohdankorn",
+        "icon": "facebook",
+        "link": "https://www.facebook.com/bohdankorn"
+      },
+      {
+        "alt": "kornatskyi",
+        "icon": "twitter",
+        "link": "https://twitter.com/kornatskyi"
+      },
+      {
+        "alt": "Bohdan.Korn#1174",
+        "icon": "discord",
+        "link": "https://discord.com/users/861821387308138537"
+      },
+      {
+        "alt": "@Kornatskyi",
+        "icon": "telegram",
+        "link": "https://t.me/Kornatskyi"
+      }
+    ]
+  },
+  "theme": {
+    "light": {
+      "palette": {
+        "type": "light",
+        "background": {
+          "paper": "#fff",
+          "default": "#fafafa"
         }
+      }
+    },
+    "dark": {
+      "palette": {
+        "type": "dark",
+        "background": {
+          "paper": "#303030",
+          "default": "#212121"
+        }
+      }
     }
+  }
 }

@@ -114,7 +114,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Landing() {
   const classes = useStyles();
   const theme = useTheme();
-  const mdDown = useMediaQuery(theme.breakpoints.down("sm"));
+  const smDown = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [isCopied, setIsCopied] = useState(false);
 
@@ -127,10 +127,10 @@ export default function Landing() {
       justify="center"
     >
       <Grid item xs={12} md={8}>
-        <Typography variant={mdDown ? "h2" : "h1"}>{landing.title}</Typography>
+        <Typography variant={smDown ? "h2" : "h1"}>{landing.title}</Typography>
 
         <Typography
-          variant={mdDown ? "h5" : "h4"}
+          variant={smDown ? "h5" : "h4"}
           component="h2"
           className={classes.subtitle}
         >

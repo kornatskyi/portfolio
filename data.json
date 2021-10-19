@@ -25,6 +25,11 @@
         "alt": "bohdan.kornatskyi.2@gmail.com",
         "icon": "gmail",
         "link": "mailto:bohdan.kornatskyi.2@gmail.com"
+      },
+      {
+        "alt": "Seattle,WA",
+        "icon": "Google Maps",
+        "link": "https://www.google.com/maps/place/Seattle,+WA/"
       }
     ]
   },

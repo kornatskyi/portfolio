@@ -28,6 +28,7 @@ import { FaBeer } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { withStyles } from "@material-ui/styles";
 
 const { landing } = data;
 
@@ -40,7 +41,7 @@ const professionalDetails = landing.professionalDetails.map(
 
     return {
       alt,
-      color: "#" + ic.hex,
+      color: "white",
       backgroundColor: "#" + ic.hex,
       icon: ic.component || (
         <svg
@@ -51,7 +52,7 @@ const professionalDetails = landing.professionalDetails.map(
           xmlns="http://www.w3.org/2000/svg"
         >
           <title>{icon}</title>
-          <path d={ic.path} fill={"#" + ic.hex} />
+          <path d={ic.path} fill="white" />
         </svg>
       ),
       link,
@@ -61,12 +62,12 @@ const professionalDetails = landing.professionalDetails.map(
 
 let iobj = {};
 let cobj = {};
-professionalDetails.forEach(({ alt, color }) => {
-  iobj[alt] = { color };
+professionalDetails.forEach(({ alt, backgroundColor }) => {
+  iobj[alt] = { backgroundColor };
 });
 // Styles for copy icon
-professionalDetails.forEach(({ alt, backgroundColor }) => {
-  cobj["copy" + alt] = { backgroundColor };
+professionalDetails.forEach(({ alt, backgroundColor, color }) => {
+  cobj["copy" + alt] = { backgroundColor, color };
 });
 const useStyles = makeStyles((theme) => ({
   cont: {
@@ -80,10 +81,12 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     height: theme.spacing(4),
     width: theme.spacing(4),
-    backgroundColor: "transparent",
+    padding: theme.spacing(0.6),
+    // backgroundColor: "transparent",
   },
   combinedIconsContainer: {
     position: "relative",
+    cursor: "pointer",
   },
   copyIcon: {
     position: "absolute",
@@ -98,10 +101,8 @@ const useStyles = makeStyles((theme) => ({
   detail: {
     marginTop: theme.spacing(1),
   },
-
   dp: {
     width: "100%",
-
     height: "auto",
     boxShadow:
       "0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%)",
@@ -125,7 +126,7 @@ export default function Landing() {
       alignItems="center"
       justify="center"
     >
-      <Grid item xs={12} md={9}>
+      <Grid item xs={12} md={8}>
         <Typography variant={mdDown ? "h2" : "h1"}>{landing.title}</Typography>
 
         <Typography
@@ -141,64 +142,64 @@ export default function Landing() {
           />
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={6} md={3}>
+      <Grid item xs={12} md={4}>
         <Avatar
           variant="rounded"
           src={landing.photo}
           className={classes.dp}
         ></Avatar>
         <Grid container direction="column" justify="space-between">
-          <Typography>
-            <BiMap />
-            {landing.location}
-          </Typography>
           {professionalDetails.map(({ alt, icon, link }, i) => (
             <Grid
               container
               direction="row"
               alignItems="center"
               className={classes.detail}
+              key={i}
+              wrap="nowrap"
             >
-              <div
-                onClick={(e) => {
-                  e.preventDefault();
-                  copyToClipboard(alt);
-                  setIsCopied(true);
-                  setTimeout(() => {
-                    setIsCopied(false);
-                  }, 5000);
-                }}
-                className={classes.combinedIconsContainer}
-              >
-                {/* Contacts Icons */}
-                <Tooltip
-                  title={isCopied ? "Copied" : "Copy"}
-                  placement="bottom"
+              <Tooltip title={isCopied ? "Copied" : "Copy"} placement="bottom">
+                <div
+                  onClick={(e) => {
+                    e.preventDefault();
+                    copyToClipboard(alt);
+                    setIsCopied(true);
+
+                    setTimeout(() => {
+                      setIsCopied(false);
+                    }, 1000);
+                  }}
+                  className={classes.combinedIconsContainer}
                 >
+                  {/* Contacts Icons */}
+
                   <Avatar
                     variant="rounded"
                     className={clsx([classes.avatar, classes[alt]])}
                   >
                     {icon}
                   </Avatar>
-                </Tooltip>
 
-                {/* Copy icon */}
-                <Zoom in={true}>
-                  <Avatar
-                    variant="rounded"
-                    className={clsx([classes.copyIcon, classes["copy" + alt]])}
-                  >
-                    <CopyIcon />
-                  </Avatar>
-                </Zoom>
-              </div>
+                  {/* Copy icon */}
+                  <Zoom in={true}>
+                    <Avatar
+                      variant="rounded"
+                      className={clsx([
+                        classes.copyIcon,
+                        classes["copy" + alt],
+                      ])}
+                    >
+                      <CopyIcon />
+                    </Avatar>
+                  </Zoom>
+                </div>
+              </Tooltip>
               <Link
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={i}
                 className={clsx([classes.contactsLink])}
+                noWrap
               >
                 {alt}
               </Link>

@@ -1,6 +1,6 @@
 import { Avatar, Card, CardActionArea, CardHeader, Grid, makeStyles, Typography, useMediaQuery, useTheme } from "@material-ui/core";
 import Image from 'next/image'
-import { DateRange, LocationCity, Assignment } from '@material-ui/icons';
+import { DateRange, LocationCity, Assignment, Description } from '@material-ui/icons';
 import data from '../data.json'
 import { useEffect, useRef, useState } from "react";
 
@@ -65,7 +65,7 @@ export default function Experience() {
     const theme = useTheme()
     const mdDown = useMediaQuery(theme.breakpoints.down('md'))
     const align = mdDown ? "center" : "flex-end"
-    const textAlign = mdDown ? "center" : "right"
+    const textAlign = mdDown ? "center" : "left"
 
     const [animate, setAnimate] = useState(false)
     const animRef = useRef()
@@ -87,10 +87,10 @@ export default function Experience() {
                 </Typography>
 
             </Grid>
-            <Grid container item xs={12} lg={6} direction="column" spacing={1} >
+            <Grid container item xs={12} direction="row" spacing={1} >
                 {
                     Object.getOwnPropertyNames(experience).map((title, id) =>
-                        <Grid style={{ width: "100%", marginLeft: "auto" }} item key={id} className={classes.expObj}  >
+                        <Grid style={{ width: "100%" }} item key={id} lg={6} className={classes.expObj}  >
                             <Typography variant="h4" align={textAlign} gutterBottom component="p">
                                 {title}
                             </Typography>
@@ -106,9 +106,10 @@ export default function Experience() {
                                         country,
                                         url,
                                         thumbnail,
-                                        certificate
+                                        certificate,
+                                        description
                                     }, i) =>
-                                        <Grid style={{ marginLeft: "auto" }} item xs={12} sm={6} key={i}>
+                                        <Grid item xs={12} sm={6} key={i}>
                                             <Card className={classes.card}>
                                                 <CardActionArea
                                                     className={classes.cardActionArea}
@@ -134,6 +135,14 @@ export default function Experience() {
 
                                                         }}
                                                     />
+                                                    {
+                                                        description ? <CardHeader
+                                                            avatar={<Description />}
+                                                            title={"Description"}
+                                                            subheader={description}
+                                                            className={classes.cardHeader}
+                                                        /> : <></>
+                                                    }
                                                     <CardHeader
                                                         avatar={<DateRange />}
                                                         title={getHumanDiff(startDate, endDate)}
@@ -203,6 +212,6 @@ export default function Experience() {
                 }
             </Grid>
             <div ref={animRef}></div>
-        </Grid>
+        </Grid >
     )
 }

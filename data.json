@@ -86,7 +86,6 @@
     "baseURI": "https://api.github.com/repos/kornatskyi/",
     "repositories": [
       "authentication",
-      "authentication-form",
       "zombie-time",
       "isaac-portfolio",
       "nucampsite-react",
@@ -97,6 +96,33 @@
     ]
   },
   "experience": {
+    "Work experience": [
+      {
+        "organization": "Seattle Coffee Works ",
+        "role": "Web Developer",
+        "type": "Pro bono",
+        "startDate": "2021-04-01",
+        "endDate": "2021-07-01",
+        "city": "Seattle, WA",
+        "country": "USA",
+        "url": "https://www.seattlecoffeeworks.com/",
+        "thumbnail": "/coffeeworks.jpeg",
+
+        "description": "Working on website and AmeriCommerce CMS. Adding new features."
+      },
+      {
+        "organization": "Artway Construction",
+        "role": "Manager",
+        "type": "Full time",
+        "startDate": "2019-09-01",
+        "endDate": "2021-01-01",
+        "city": "Seattle, WA",
+        "country": "USA",
+        "url": "https://www.artwayconstruction.com/",
+        "thumbnail": "/artway.png",
+        "description": "Optimizing web site. Developed new website design, and implement it with JS, CSS and HTML. "
+      }
+    ],
     "Education": [
       {
         "organization": "Pervomaisk college of Admiral Makarov National University of Shipbuilding ",

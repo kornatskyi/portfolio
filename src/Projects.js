@@ -80,7 +80,7 @@ export default function Projects({ data }) {
       </Grid>
       <Grid container item direction="row" spacing={1}>
         <Grid item xs={12}>
-          <Carousel autoPlay={false}>
+          <Carousel autoPlay={false} navButtonsAlwaysInvisible={true}>
             {!!data &&
               //Group elements in group by 3 to correctly display inside the slider
               groupElementsByN(
@@ -177,7 +177,7 @@ export default function Projects({ data }) {
                     </Fade>
                   </Grid>
                 )),
-                3
+                6
               ).map((group, i) => (
                 <Grid
                   container

@@ -60,6 +60,5 @@ export function groupElementsByN(data, n) {
         group[j] = group[j] || [];
         group[j].push(data[i]);
     }
-    console.log(group);
     return group;
 }

@@ -74,6 +74,7 @@ export default function Projects({ data }) {
       alignItems="center"
       spacing={10}
       className={classes.cont}
+      id="projects"
     >
       <Grid item>
         <Typography variant="h2" align="center" innerRef={animRef}>

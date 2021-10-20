@@ -98,6 +98,7 @@ export default function Skills() {
       alignItems="center"
       spacing={6}
       className={classes.cont}
+      id="skills"
     >
       <Grid item ref={animRef}>
         <Typography variant="h2" align="center">

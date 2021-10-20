@@ -125,6 +125,7 @@ export default function Landing() {
       direction="row"
       alignItems="center"
       justify="center"
+      id="landing"
     >
       <Grid item xs={12} md={8}>
         <Typography variant={smDown ? "h2" : "h1"}>{landing.title}</Typography>
@@ -142,7 +143,7 @@ export default function Landing() {
           />
         </Typography>
       </Grid>
-      <Grid item xs={12} md={4}>
+      <Grid item xs={11} sm={8} md={3}>
         <Avatar
           variant="rounded"
           src={landing.photo}
@@ -157,6 +158,7 @@ export default function Landing() {
               className={classes.detail}
               key={i}
               wrap="nowrap"
+              justify="space-between"
             >
               <Tooltip title={isCopied ? "Copied" : "Copy"} placement="bottom">
                 <div
@@ -194,6 +196,7 @@ export default function Landing() {
                   </Zoom>
                 </div>
               </Tooltip>
+
               <Link
                 href={link}
                 target="_blank"
@@ -201,7 +204,7 @@ export default function Landing() {
                 className={clsx([classes.contactsLink])}
                 noWrap
               >
-                {alt}
+                <Typography> {alt}</Typography>
               </Link>
             </Grid>
           ))}

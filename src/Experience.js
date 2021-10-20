@@ -81,7 +81,7 @@ export default function Experience() {
     }, [])
 
     return (
-        <Grid direction="row" container justify="center" alignItems="center" spacing={10} className={classes.cont}>
+        <Grid direction="row" container justify="center" alignItems="center" spacing={10} className={classes.cont} id="experience">
             <Grid item xs={12} lg={6}>
                 <Typography variant="h2" gutterBottom align="center">
                     Education and certification

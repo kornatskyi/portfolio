@@ -59,7 +59,8 @@ Object.values(wrappedSkills).forEach((oarr) => {
 
 const useStyles = makeStyles((theme) => ({
   cont: {
-    // minHeight: `calc(100vh - ${theme.spacing(1)}px)`,
+    minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
+    paddingBottom: theme.spacing(10),
   },
   skobj: {
     marginBottom: theme.spacing(4),

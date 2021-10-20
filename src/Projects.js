@@ -28,6 +28,8 @@ import { groupElementsByN } from "./util.js";
 
 const useStyles = makeStyles((theme) => ({
   cont: {
+    minHeight: `calc(100vh - ${theme.spacing(4)}px)`,
+    paddingBottom: theme.spacing(10),
   },
   card: {
     height: "100%",

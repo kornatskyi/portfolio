@@ -9,6 +9,7 @@
     "@material-ui/core": "latest",
     "@material-ui/icons": "^4.11.2",
     "@primer/octicons-react": "^12.0.0",
+    "auto-bind": "^2.1.1",
     "clsx": "latest",
     "next": "^11.1.2",
     "next-pwa": "^5.0.5",
@@ -16,11 +17,10 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.3.1",
+    "react-swipeable": "^6.1.0",
     "react-typed": "^1.2.0",
     "simple-icons": "^4.11.0",
-    "webpack": "^5.58.2",
-    "auto-bind": "^2.1.1",
-    "react-swipeable": "^6.1.0"
+    "webpack": "^5.58.2"
   },
   "scripts": {
     "dev": "next -p 3010",

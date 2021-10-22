@@ -24,3 +24,5 @@ yarn-error.log*
 /envvars.js
 
 next.config.js
+# Local Netlify folder
+.netlify

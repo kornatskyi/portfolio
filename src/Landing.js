@@ -7,28 +7,19 @@ import {
   useMediaQuery,
   useTheme,
   Zoom,
-  Box,
   Link,
 } from "@material-ui/core";
 import { useState } from "react";
 import ReactTyped from "react-typed";
 import clsx from "clsx";
-import Image from "next/image";
 import simpleIcons from "simple-icons";
 import { copyToClipboard } from "./util";
 
 import data from "../data.json";
 import { iconify } from "./util";
 import Cancel from "@material-ui/icons/Cancel";
-import { CopyIcon, MarkGithubIcon, MailIcon } from "@primer/octicons-react";
+import { CopyIcon, } from "@primer/octicons-react";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import { FaBeer } from "react-icons/fa";
-import { BiMap } from "react-icons/bi";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FiMail } from "react-icons/fi";
-import { withStyles } from "@material-ui/styles";
 
 const { landing } = data;
 
@@ -82,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(4),
     width: theme.spacing(4),
     padding: theme.spacing(0.6),
+    backgroundColor: 'red'
     // backgroundColor: "transparent",
   },
   combinedIconsContainer: {
@@ -144,11 +136,16 @@ export default function Landing() {
         </Typography>
       </Grid>
       <Grid item xs={11} sm={8} md={3}>
-        <Avatar
-          variant="rounded"
-          src={landing.photo}
-          className={classes.dp}
-        ></Avatar>
+        <Zoom
+          in={true}
+          style={{ transitionDelay: `${150 * 1}ms` }}
+        >
+          <Avatar
+            variant="rounded"
+            src={landing.photo}
+            className={classes.dp}
+          ></Avatar>
+        </Zoom>
         <Grid container direction="column" justify="space-between">
           {professionalDetails.map(({ alt, icon, link }, i) => (
             <Grid

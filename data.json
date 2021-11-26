@@ -85,6 +85,7 @@
   "projects": {
     "baseURI": "https://api.github.com/repos/kornatskyi/",
     "repositories": [
+      "easel",
       "authentication",
       "zombie-time",
       "isaac-portfolio",
